@@ -16,9 +16,11 @@ const skills = [
 
     { name: "Python",  category: "Machine Learning", logo: "/Images/programing_15484303.png" },
     { name: "TensorFlow",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
-    { name: "MongoDB",  category: "Machine Learning", logo: "/Images/MongoDB.png" },
-
-
+    { name: "Linear Regression",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
+    { name: "LSTM",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
+    { name: "k-Nearest Neighbors (kNN)",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
+    { name: "Decision Trees",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
+    { name: "XGBoost ",  category: "Machine Learning", logo: "/Images/icons8-express-js (1).svg" },
 
 
     { name: "Git/Github",  category: "tools", logo: "/Images/Git.png" },
