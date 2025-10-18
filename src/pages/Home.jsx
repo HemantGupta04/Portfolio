@@ -6,6 +6,7 @@ import { HeroSection } from '../components/HeroSection'
 import { AboutMe } from '../components/AboutMe'
 import { SkillsSection } from '../components/SkillsSection'
 import { Projects } from '../components/Projects'
+import { Achievement } from '../components/Achievement'
 import { ContactMe } from '../components/ContactMe'
 import { Footer } from '../components/Footer'
 
@@ -25,6 +26,7 @@ const Home = () => {
           <AboutMe/>
           <SkillsSection/>
           <Projects/>
+          <Achievement/>
           <ContactMe/>
         </main>
 

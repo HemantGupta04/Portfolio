@@ -7,11 +7,12 @@ const navItems = [
     {name: 'About', url: '#about'},
     {name: 'Skills', url: '#skills'},
     {name: 'Projects', url: '#projects'},
+    {name: 'Achievement', url: '#achievement'},
     {name: 'Contact', url: '#contact'},
 ];
 
 export const Navbar = () => {
-    const[isScrolled,setIsScrolled] = useState(true);
+    const[isScrolled,setIsScrolled] = useState(false);
     const[isMenuOpen,setIsMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export const Navbar = () => {
         <div className="container flex items-center justify-between md:justify-around">
             <a className="font-bold text-xl text-primary flex items-center" href="#home">
                 <span className="relative z-10">
-                    <span className="text-glow text-foreground">Abhijeet</span> Portfolio
+                    <span className="text-glow text-foreground">Hemant</span> Portfolio
                 </span>
             </a>
 

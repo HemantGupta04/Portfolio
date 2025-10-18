@@ -5,53 +5,39 @@ import { useEffect } from 'react';
 
 const projects = [
     {
-        id:1,
-        title: "NexaPanel - Dashboard Web Design",
-        description: "A Next.js-powered admin dashboard designed for seamless business insights and control.",
-        image: "/Projects/NexaPanel.png",
-        tags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-        url: "#",
-        git: "#"  
+        id: 1,
+        title: "AlgoAce - Online Judge",
+        description: "A MERN-based online coding platform featuring secure authentication, real-time code execution, and admin tools for managing problems and submissions.",
+        image: "/Projects/home.png",
+        tags: ["Node.js", "Javascript", "Tailwind CSS", "React", "Express.js", "MongoDB", "Docker"],
+        git: "https://github.com/HemantGupta04/Project-OnlineJudge"
     },
 
     {
-        id:2,
-        title: "Mech2Door",
-        description: "A full-stack MERN application for managing products with CRUD operations, secure auth, and real-time updates.",
-        image: "/Projects/ProductPalace.png",
-        tags: ["Node.js", "MongoDB","Express.js","PostMan","Tailwind CSS", "React"],
-        url: "#",
+        id: 2,
+        title: "E-commerce Web App",
+        description: "A full-stack MERN e-commerce platform that enables product management with CRUD operations, secure authentication, and real-time inventory updates.",
+        image: "/Images/ecomm.png",
+        tags: ["Node.js", "MongoDB", "Express.js", "PostMan", "Tailwind CSS", "React", "twillo"],
+        git: "https://github.com/HemantGupta04/EcommerceSite"
+    },
+
+    {
+        id: 3,
+        title: "Shape -IT",
+        description: "A responsive mental health web, featuring personalized wellness sections and interactive meditation rooms.",
+        image: "/Projects/shapeit.png",
+        tags: ["Javascript", "CSS", "HTML"],
+        git: "https://github.com/HemantGupta04/ShapeIt"
+    },
+
+    {
+        id: 4,
+        title: "Stock Headlines Analysis",
+        description: "A machine learning model that predicts stock movements (up or down) based on real-time news headlines using sentiment analysis.",
+        image: "/Projects/download.jpeg",
+        tags: ["Python", "TinyMl", "LSTM"],
         git: "#"
-    },
-
-    {
-        id:5,
-        title: "VirtualR - Developer Tools Website",
-        description: "A dynamic and responsive virtual reality showcase built with React, featuring sleek UI and interactive components.",
-        image: "/Projects/VirtualR.png",
-        tags: [ "Javascript", "Tailwind CSS", "React", "Vite.js"],
-        url: "https://virtualr-react.netlify.app/",
-        git: "#"
-    },
-
-    {
-        id:4,
-        title: "Work-List - To_do_list web app",
-        description: "A minimalist and intuitive task manager built with React for organizing daily to-dos with real-time updates.",
-        image: "/Projects/ToDoList.png",
-        tags: ["Javascript", "Tailwind CSS", "React"],
-        url: "https://work-todolist.netlify.app/",
-        git: "#"
-    },
-
-    {
-        id:3,
-        title: "HR Email Automation",
-        description: "A visually appealing and responsive restaurant landing page built using pure HTML and CSS.",
-        image: "/Projects/Grill.png",
-        tags: [ "Javascript", "Node.js", "Gen API", "Nodemailer", "xlsx"],
-        url: "#",
-        git: "https://github.com/abhicodes01/AI-HR-EmailAutomation"
     },
 ]
 
@@ -59,32 +45,32 @@ const projects = [
 export const Projects = () => {
 
     useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: false, // animation happens only once
-  });
-}, []);
+        AOS.init({
+            duration: 1000,
+            once: false, // animation happens only once
+        });
+    }, []);
 
 
     return <section id="projects" className="py-24 px-4 relative">
-        <div data-aos ="fade-up" className="container mx-auto max-w-5xl">
+        <div data-aos="fade-up" className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                 Featured <span className="text-primary">Projects</span>
             </h2>
 
             <p className="txet-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                These projects reflect my approach to writing clean, maintainable code and building user-friendly interfaces.  
+                These projects reflect my approach to writing clean, maintainable code and building user-friendly interfaces.
                 I’ve focused on practical solutions that balance performance, usability, and reliability.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, key)=>(
+                {projects.map((project, key) => (
                     <div key={key}
-                      className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                        className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                     >
                         <div className="h-48 overflow-hidden">
-                            <img src={project.image} alt={project.title} 
-                              className="w-full h-full object-cover trasnition-transform duration-500 group-hover:scale-110"
+                            <img src={project.image} alt={project.title}
+                                className="w-full h-full object-cover trasnition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
@@ -96,23 +82,18 @@ export const Projects = () => {
                                     </span>
                                 ))}
                             </div>
-                            
+
                             <h3 className="text-xl text-left font-semibold mb-3">{project.title}</h3>
                             <p className="text-muted-foreground text-left text-xs mb-4">{project.description}</p>
 
                             <div className="flex justify-between items-center">
-                                <a href={project.url} target="_blank" rel="noopener noreferrer" 
-                                className="cosmic-button text-xs text-muted-foreground font-semibold flex gap-1">
-                                   Live Link <ArrowUpRight size={16}/>
-                                </a>
-
-                                <a href={project.git} 
-                                  className="text-foreground hover:text-primary transition-colors duration-300"
+                                <a href={project.git}
+                                    className="text-foreground hover:text-primary transition-colors duration-300"
                                 >
-                                    <Github/>
+                                    <Github />
                                 </a>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -120,8 +101,8 @@ export const Projects = () => {
             </div>
 
             <div className="text-center mt-12">
-                <a target="_blank" href="https://github.com/abhicodes01" className="cosmic-button w-fit flex items-center mx-auto gap-2">
-                    Check My Github <ArrowRight size={16}/>
+                <a target="_blank" href="https://github.com/HemantGupta04" className="cosmic-button w-fit flex items-center mx-auto gap-2">
+                    Check My Github <ArrowRight size={16} />
                 </a>
             </div>
         </div>

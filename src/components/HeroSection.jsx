@@ -9,13 +9,14 @@ export const HeroSection = () => {
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 <span className="opacity-0 animate-fade-in">Hi,I'm </span>
-                <span className="text-primary opacity-0 animate-fade-in-delay-1"> Abhijeet </span>
-                <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Singh Parihar </span>
+                <span className="text-primary opacity-0 animate-fade-in-delay-1"> Hemant </span>
+                <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Gupta </span>
             </h1>
+            
 
             <p className="text-lg md:text-xl text-muted-foreground max-2xl mx-auto opacity-0 animate-fade-in-delay-3 ">
-                "MERN Stack Developer and UI/UX enthusiast, crafting responsive,
-                user-focused web apps that blend performance with pixel-perfect design."
+                "I’m a Software Developer, who loves <span className="text-blue-600">problem-solving</span> and building <span className="text-blue-600">full-stack</span> projects using the MERN stack.
+                Recently, I’ve also started exploring <span className="text-blue-600">Machine Learning</span> to expand my skill set and create smarter"
             </p>
 
             <div className="flex flex-col space-y-5 items-center justify-center opacity-0 animate-fade-in-delay-4">
